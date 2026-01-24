@@ -9,9 +9,9 @@ radius = 30.265491
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_vgmp0")
 
-[node name="HappyBoo" parent="." instance=ExtResource("1_ed8k8")]
-position = Vector2(1, 0)
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, -1)
 shape = SubResource("CircleShape2D_vgmp0")
+
+[node name="HappyBoo" parent="CollisionShape2D" instance=ExtResource("1_ed8k8")]
+position = Vector2(-1, 1)
