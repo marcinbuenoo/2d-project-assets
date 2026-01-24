@@ -5,3 +5,8 @@ func _physics_process(delta):
 "move_up", "move_down")
 	velocity = direction * 600
 	move_and_slide()
+	
+	if velocity.length() > 0.0:
+		get_node("HappyBoo").play_walk_animation()
+	else:
+		get_node("HappyBoo").play_idle_animation()
