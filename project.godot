@@ -72,11 +72,15 @@ Settings/Use_Shift_instead_of_Alt=false
 Settings/Surface_Placement_Collision_Mask=4294967295
 Settings/Show_Tooltips=true
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="Your First 2D Game With Godot 4: START (GDQuest)"
 run/main_scene="uid://x2wxddd81bw4"
-config/features=PackedStringArray("4.5", "Forward Plus")
+config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.png"
 
 [display]
@@ -91,7 +95,7 @@ project/assembly_name="Getting started with Godot 4"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/colorpicker_presets/plugin.cfg")
+enabled=PackedStringArray()
 
 [input]
 

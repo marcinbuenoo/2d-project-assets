@@ -7,6 +7,7 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	if velocity.length() > 0.0:
-		get_node("CollisionShape2D/HappyBoo").play_walk_animation()
-	else:
-		get_node("CollisionShape2D/HappyBoo").play_idle_animation()
+		%HappyBoo.play_walk_animation()
+	else:	
+		%HappyBoo.play_idle_animation()
+	
