@@ -1,3 +1,4 @@
-res://palyer.tscn
-res://palyer.gd
+res://game.tscn
 res://player.gd
+res://survivor_game.tscn
+res://pine_tree.tscn

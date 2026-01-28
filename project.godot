@@ -79,7 +79,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Your First 2D Game With Godot 4: START (GDQuest)"
-run/main_scene="uid://x2wxddd81bw4"
+run/main_scene="uid://bvp0oy6d34s7n"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.png"
 
