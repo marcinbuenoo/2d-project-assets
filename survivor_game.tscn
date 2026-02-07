@@ -2,17 +2,34 @@
 
 [ext_resource type="PackedScene" uid="uid://x2wxddd81bw4" path="res://player.tscn" id="1_wkcnj"]
 [ext_resource type="PackedScene" uid="uid://dq3r015sr1uql" path="res://pine_tree.tscn" id="2_8id3q"]
+[ext_resource type="PackedScene" uid="uid://y38gte5o0xf8" path="res://mob.tscn" id="2_kbdm8"]
 
 [node name="Game" type="Node2D" unique_id=982580444]
 y_sort_enabled = true
 position = Vector2(-41, 0)
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1218675777]
-offset_right = 1979.0
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=408353182]
+layer = -30
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1218675777]
+offset_left = -41.0
+offset_right = 1938.0
 offset_bottom = 1143.0
 
 [node name="Player" parent="." unique_id=507791454 instance=ExtResource("1_wkcnj")]
 position = Vector2(942, 629)
+
+[node name="Mob" parent="." unique_id=923720173 instance=ExtResource("2_kbdm8")]
+position = Vector2(558, 520)
+
+[node name="Mob2" parent="." unique_id=95258902 instance=ExtResource("2_kbdm8")]
+position = Vector2(330, 577)
+
+[node name="Mob3" parent="." unique_id=293927254 instance=ExtResource("2_kbdm8")]
+position = Vector2(998, 325)
+
+[node name="Mob4" parent="." unique_id=1600275332 instance=ExtResource("2_kbdm8")]
+position = Vector2(774, 308)
 
 [node name="StaticBody2D" parent="." unique_id=633903539 instance=ExtResource("2_8id3q")]
 position = Vector2(352, 757)

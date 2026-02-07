@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_ed8k8"]
 [ext_resource type="Script" uid="uid://c0os2rgo0gok6" path="res://player.gd" id="1_vgmp0"]
+[ext_resource type="PackedScene" uid="uid://du5i8r7jdycua" path="res://gun.tscn" id="3_i3pqv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vgmp0"]
 radius = 30.265491
@@ -15,3 +16,8 @@ position = Vector2(1, 0)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1386137797]
 position = Vector2(2, -1)
 shape = SubResource("CircleShape2D_vgmp0")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=685533244]
+
+[node name="Gun" parent="." unique_id=173268384 instance=ExtResource("3_i3pqv")]
+position = Vector2(-1, -39)
